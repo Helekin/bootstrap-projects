@@ -1,0 +1,368 @@
+:root {
+  --text: rgba(255, 255, 255, 0.7);
+  --white: #fff;
+  --input: #3a3b3c;
+  --input-hover: #4b4d4e;
+  --active: #2d88ff;
+  --white-gray: #b0b3b8;
+  --background-content: #242526;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #18191a;
+  color: var(--text);
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+header {
+  background: var(--background-content);
+}
+
+header .logo {
+  display: inline-block;
+}
+
+header .logo svg {
+  color: var(--white);
+  height: 35px;
+  width: 35px;
+}
+
+header .search-bar {
+  position: relative;
+  width: 100%;
+}
+
+header .search-bar input {
+  width: 100%;
+  border: none;
+  background: var(--input);
+  color: var(--text);
+  height: 40px;
+  border-radius: 100px;
+  padding: 0 20px 0 40px;
+}
+
+header .search-bar .icon {
+  position: absolute;
+  top: 6px;
+  left: 15px;
+  color: var(--text);
+}
+
+header .menu a {
+  display: inline-block;
+  padding: 10px 40px;
+}
+
+header .menu a:hover {
+  color: var(--text);
+  background: var(--background-content);
+  border-radius: 5px;
+}
+
+header .menu a svg {
+  width: 25px;
+  height: 25px;
+}
+
+header .menu .active {
+  border-bottom: 4px solid var(--active);
+  color: var(--active);
+}
+
+header .menu .active:hover {
+  background: none;
+  border-radius: 0px;
+  color: var(--active);
+}
+
+header .buttons a {
+  background: var(--input);
+  display: inline-flex;
+  border-radius: 100px;
+  min-width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 7px;
+}
+
+header .buttons a:hover {
+  background: #4b4d4e;
+  color: var(--text);
+}
+
+header .buttons .profile {
+  height: 40px;
+  padding: 0 7px;
+  background: none;
+  min-width: max-content;
+}
+
+header .buttons .profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  margin-right: 5px;
+}
+
+aside {
+  height: 100vh;
+  overflow: auto;
+  padding-top: 60px;
+}
+
+.quick-links > nav a {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  padding: 10px 10px;
+  border-radius: 3px;
+}
+
+.quick-links > nav a:hover {
+  background: var(--input-hover);
+}
+
+.quick-links .profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+
+.quick-links .profile .icon {
+  margin-right: 20px;
+}
+
+.quick-links .profile .icon svg {
+  height: 20px;
+  width: 20px;
+}
+
+footer {
+  margin: 40px 0;
+}
+
+footer nav a {
+  font-size: 14px;
+  margin-right: 7px;
+  color: var(--white-gray);
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+  color: var(--white-gray);
+}
+
+.contacts .section {
+  margin-bottom: 20px;
+}
+
+.contacts .title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--white-gray);
+  margin-bottom: 10px;
+}
+
+.contacts .ads {
+  display: block;
+  max-height: 100px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.contacts .ads img {
+  width: 100%;
+}
+
+.contacts nav a {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contacts nav a:hover {
+  background: var(--input-hover);
+}
+
+.contacts nav a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+
+main {
+  padding-top: 70px;
+}
+
+main .post,
+main .publications {
+  background: var(--background-content);
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+main .post .form {
+  display: flex;
+  justify-self: start;
+}
+
+main .photo {
+  display: block;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+
+main .photo img {
+  width: 100%;
+}
+
+main .post .form input {
+  width: 100%;
+  border: none;
+  background: var(--input);
+  height: 40px;
+  border-radius: 100px;
+  padding: 0 20px;
+  color: var(--text);
+}
+
+main .post .buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+main .post .buttons a:hover {
+  background: var(--input-hover);
+  color: var(--text);
+}
+
+main .post .buttons a svg {
+  margin-right: 7px;
+}
+
+main .publication .header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+main .publication .header .data {
+  display: flex;
+  flex-direction: column;
+}
+
+main .publication .header .data .name {
+  color: var(--white);
+}
+
+main .publication .header .data .time {
+  color: var(--text);
+  font-size: 14px;
+}
+
+main .publication .header .data .time:hover {
+  color: var(--text);
+}
+
+main .publication .header .data a:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+main .publication .body p {
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+main .publication .body img {
+  width: 100%;
+}
+
+main .publication .comments {
+  padding: 10px;
+}
+
+main .publication .comments .like svg {
+  margin-right: 10px;
+  color: #e75151;
+}
+
+main .publication .comments a,
+main .publication .comments .like {
+  color: var(--text);
+}
+
+main .publication .comments a:hover {
+  text-decoration: underline;
+}
+
+main .publication .buttons button {
+  width: 100%;
+  border: none;
+  background: none;
+  color: var(--text);
+  padding: 10px;
+  border-radius: 3px;
+}
+
+main .publication .buttons button:hover {
+  background: #3a3a3a;
+}
+
+main .publication .buttons button svg {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .quick-links,
+  .contacts {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    padding: 10px;
+  }
+
+  .menu {
+    margin-top: 10px;
+  }
+
+  .main-content {
+    padding-top: 70px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header .menu a {
+    padding: 10px 20px;
+  }
+}

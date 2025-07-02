@@ -1,0 +1,247 @@
+body {
+  background: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+}
+
+header .nav {
+  min-height: 80px;
+  overflow: hidden;
+  background: #fff;
+}
+
+header .logo h2,
+header .logo p {
+  font-size: 16px;
+  display: inline-block;
+}
+
+header .logo .icon {
+  color: #bfbfbf;
+}
+header .logo svg {
+  width: 20px;
+  height: 20px;
+}
+header .logo p {
+  color: #777;
+}
+
+header .menu .c1 {
+  background: #3da5e2;
+}
+header .menu .c2 {
+  background: #005385;
+}
+header .menu .c3 {
+  background: #003855;
+}
+
+header .menu .c1:hover {
+  background: #1ba0ef;
+}
+header .menu .c2:hover {
+  background: #00426a;
+}
+header .menu .c3:hover {
+  background: #002d44;
+}
+
+.portfolio {
+  border-top: 5px solid #3da5e2;
+  background: #fff;
+}
+
+.portfolio .title {
+  color: #3da5e2;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.portfolio .gallery .image-container {
+  max-height: 180px;
+  overflow: hidden;
+}
+
+.portfolio .gallery .image-container a {
+  background: #3da5e2;
+  display: inline-block;
+}
+
+.portfolio .gallery .image-container:hover img {
+  opacity: 0.3;
+}
+
+.modal-dialog {
+  max-width: 1000px;
+}
+
+/* About me */
+.about-me .photo .name {
+  color: #545454;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.about-me .info .title {
+  color: #005385;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.about-me .info .resume {
+  letter-spacing: 1px;
+}
+
+.about-me .info .label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #005385;
+  margin-bottom: 10px;
+}
+.about-me .info .progress {
+  background: #005385;
+  border-radius: 0;
+  height: 25px;
+}
+
+.about-me .info .progress .progress-bar {
+  background: #3da5e2;
+  line-height: 25px;
+  padding-left: 20px;
+}
+
+/* Contact */
+.contact {
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.contact .title {
+  color: #003855;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact .form input[type="text"],
+.contact .form input[type="email"],
+.contact .form textarea {
+  padding: 15px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contact .form textarea {
+  height: 150px;
+  min-height: 150px;
+  max-height: 250px;
+}
+
+.contact .form .button {
+  background: #3da5e2;
+  border: none;
+  padding: 7px 30px;
+  color: #fff;
+  font-family: "Opens Sans", sans-serif;
+  cursor: pointer;
+  width: auto;
+  border-radius: 3px;
+}
+
+.contact .form .button:hover {
+  background: #1ba0ef;
+}
+
+/* Footer */
+.social-network {
+  padding: 40px 0;
+  margin-bottom: 40px;
+}
+
+.social-network .icon {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  background: #cbcbcb;
+  display: inline-block;
+  margin: 0px 20px;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+}
+
+.social-network svg {
+  width: 40px;
+  height: 40px;
+}
+
+.social-network .twitter {
+  background: #1da1f2;
+}
+
+.social-network .instagram {
+  background: #833ab4;
+}
+
+.social-network .facebook {
+  background: #3b5998;
+}
+
+/* Device sm */
+@media screen and (max-width: 576px) {
+  .social-network .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .social-network svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Device md */
+@media screen and (max-width: 768px) {
+}
+
+/* Device lg */
+@media screen and (max-width: 992px) {
+  .logo {
+    height: 76px;
+  }
+
+  header .menu {
+    min-height: 76px;
+  }
+
+  header .menu a {
+    width: 100%;
+  }
+
+  .portfolio .gallery .image-container:nth-child(1) {
+    order: 1;
+  }
+  .portfolio .gallery .image-container:nth-child(2) {
+    order: 3;
+  }
+  .portfolio .gallery .image-container:nth-child(3) {
+    order: 6;
+  }
+  .portfolio .gallery .image-container:nth-child(4) {
+    order: 2;
+  }
+  .portfolio .gallery .image-container:nth-child(5) {
+    order: 5;
+  }
+  .portfolio .gallery .image-container:nth-child(6) {
+    order: 4;
+  }
+  .portfolio .gallery .image-container:nth-child(7) {
+    order: 7;
+  }
+}

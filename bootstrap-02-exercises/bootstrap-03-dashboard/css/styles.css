@@ -1,0 +1,260 @@
+body {
+  background: #f2f2f2;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #262a34;
+  color: #fff;
+  min-height: 100vh;
+  min-width: 300px;
+}
+
+.sidebar a {
+  color: #fff;
+}
+
+/* Logo */
+.sidebar .logo {
+  background: #0275db;
+}
+
+.sidebar .logo h2 {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 300;
+}
+
+/* Menu */
+.sidebar .menu a {
+  display: block;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .menu a:hover {
+  background: #35ae6b;
+}
+
+.sidebar .menu a svg {
+  margin-right: 10px;
+}
+
+/* Media queries */
+@media screen and (max-width: 320px) {
+}
+
+@media screen and (max-width: 576px) {
+  .sidebar {
+    min-height: auto;
+  }
+}
+
+/* Main */
+.main {
+  padding-top: 40px;
+}
+
+.main .column {
+  padding: 0 40px;
+}
+
+.main .title {
+  color: #262a34;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+
+.main .widget {
+  margin-bottom: 40px;
+}
+
+.main .new-entry form input[type="text"],
+.main .new-entry form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.main .new-entry form textarea {
+  height: 400px;
+  min-height: 200px;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.main .new-entry button {
+  background: #0275d8;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  display: inline-block;
+  padding: 10px;
+  width: 200px;
+  border-radius: 3px;
+  transition: 0.3 ease all;
+}
+
+.main .new-entry button:hover {
+  background: #025aa5;
+}
+
+.main .new-entry button svg {
+  margin-right: 10px;
+}
+
+/* Statistics */
+.main .statistics .my-container {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.main .statistics .my-box {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  padding: 40px 20px;
+  flex: 1;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.main .statistics .my-box h3 {
+  margin-bottom: 10px;
+  color: #35ae6b;
+}
+
+.main .statistics .my-box p {
+  color: #a8a8a8;
+  margin-bottom: 0px;
+}
+.main .statistics .my-box:first-child {
+  border-right: none;
+}
+
+.main .statistics .my-box:last-child {
+  border-left: none;
+}
+
+/* Widget Comments */
+.main .comments .my-container {
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.main .comments .comment {
+  background: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.main .comments .comment .photo {
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  margin-right: 20px;
+  border-radius: 100px;
+}
+
+.main .comments .comment .photo a {
+  display: inline-block;
+}
+
+.main .comments .comment .photo img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.main .comments .comment .text {
+  flex: 1;
+}
+
+.main .comments .comment .text .text-comment {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.main .comments .comment .buttons button {
+  background: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.main .comments .comment .buttons .approve {
+  background: #35ae6b;
+}
+.main .comments .comment .buttons .delete {
+  background: #b74848;
+}
+.main .comments .comment .buttons .block {
+  color: #acacac;
+}
+
+.main .comments .comment .buttons .approve:hover {
+  background: #449d44;
+}
+.main .comments .comment .buttons .delete:hover {
+  background: #c9302c;
+}
+.main .comments .comment .buttons .block:hover {
+  color: #fff;
+  background: #acacac;
+}
+
+@media screen and (max-width: 768px) {
+  .main .comments .comment .buttons button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main .comments .comment .buttons button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    min-width: auto;
+  }
+
+  .sidebar .logo {
+    display: none;
+  }
+
+  .sidebar .menu a svg {
+    display: none;
+  }
+
+  .main .comments .comment .photo {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+}
