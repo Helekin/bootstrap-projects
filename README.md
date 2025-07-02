@@ -1,6 +1,6 @@
 ## About The Project
 
-Welcome! This repository contains a collection of exercises based on multiple courses about bootstrap.Each exercise is structured to provide hands-on experience with HTML, CSS, and Bootstrap, following best practices in front-end development.
+Welcome! This repository contains a collection of exercises based on various Bootstrap courses. Each exercise is designed to provide hands-on experience with HTML, CSS, and Bootstrap, following best practices in front-end development.
 
 ## Getting Started
 
